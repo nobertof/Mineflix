@@ -26,7 +26,9 @@ function CadastroCategoria() {
     );
   }
   useEffect(() => {
-    const URL_CATEGORIAS = 'http://localhost:8080/categorias';
+    const URL_CATEGORIAS = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://nobertoflix.herokuapp.com/categorias';
     fetch(URL_CATEGORIAS).then(async (respostaDoServidor) => {
       const resposta = await respostaDoServidor.json();
       setCategorias([
