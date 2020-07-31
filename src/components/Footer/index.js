@@ -5,7 +5,7 @@ function Footer() {
   return (
     <FooterBase>
       <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+        <img src="./Logo.png" alt="Logo Alura" width="100px" />
       </a>
       <p>
         Orgulhosamente criado durante a

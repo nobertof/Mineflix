@@ -45,11 +45,15 @@ export const VideoCardList = styled.ul`
   li {
     margin-right: 16px;
   }
+  &:hover{
+    transform:scale(2);
+  }
 `;
 
 export const VideoCardGroupContainer = styled.section`
   color: white;
-  min-height: 197px;
+  min-height: 200px;
   margin-left: 5%;
   margin-bottom: 16px;
+  
 `;

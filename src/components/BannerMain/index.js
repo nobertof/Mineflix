@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
@@ -30,11 +31,12 @@ export default function BannerMain({
             {videoDescription}
           </ContentAreaContainer.Description>
         </ContentAreaContainer.Item>
-
         <ContentAreaContainer.Item>
-          <VideoIframeResponsive
-            youtubeID={youTubeID}
-          />
+          <ContentAreaContainer.Video>
+            <VideoIframeResponsive
+              youtubeID={youTubeID}
+            />
+          </ContentAreaContainer.Video>
           <WatchButton>
             Assistir
           </WatchButton>

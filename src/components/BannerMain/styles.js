@@ -22,7 +22,23 @@ ContentAreaContainer.Item = styled.div`
     width: 100%;
   }
 `;
-
+ContentAreaContainer.Video = styled.div`
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 50px;
+  border:3px solid #DB202C;
+  @media (max-width: 800px) {
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    border:none;
+    
+  }
+  &:hover,
+  &:focus{
+    transform:scale(0.99);
+    border:12px solid #DB202C;
+  }
+`;
 ContentAreaContainer.Category = styled.h1`
   font-family: Roboto;
   font-style: normal;

@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 
 export const VideoCardContainer = styled.a`
@@ -9,7 +10,7 @@ export const VideoCardContainer = styled.a`
   color: white;
   flex: 0 0 298px;
   width: 298px;
-  height: 197px;
+  height: 170px;
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
@@ -18,11 +19,13 @@ export const VideoCardContainer = styled.a`
   display: flex;
   align-items: flex-end;
   padding: 16px;
-
   transition: opacity .3s;
-  &:hover,
-  &:focus {
-    opacity: .5;
+  &:hover{
+    transform:scale(1.11);
+    opacity:.8;
+  }
+  &:active{
+    transform:scale(0.98);
   }
   
   &:not(:first-child) {
