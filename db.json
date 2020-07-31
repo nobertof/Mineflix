@@ -2,15 +2,15 @@
     "categorias":[
         {
             "id":1,
-            "nome": "Front End",
-            "descricao": "Uma categoria show",
+            "nome": "dlet",
+            "descricao": "Outro canal de minecraft",
             "cor": "#cbd1ff"
         },
         {
             "id":2,
-            "nome": "Back End",
-            "descricao": "Outra categoria show",
-            "cor": "#cbd1ff"
+            "nome": "willzy",
+            "descricao": "Outro canal de minecraft",
+            "cor": "#ffff80"
         }
     ]
 }
