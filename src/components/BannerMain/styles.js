@@ -14,7 +14,6 @@ export const ContentAreaContainer = styled.section`
     flex-direction: column;
   }
 `;
-
 ContentAreaContainer.Item = styled.div`
   width: 50%;
   display: inline-block;
@@ -54,13 +53,13 @@ ContentAreaContainer.Description = styled.p`
 ContentAreaContainer.Title = styled.h2`
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
-  line-height: 1;
+  font-size: 20px;
+  line-height: 1.7;
   margin-top: 0;
   margin-bottom: 32px;
 
   @media (max-width: 800px) {
-    font-size: 32px;
+    font-size: 10px;
     text-align: center;
   }
 `;
@@ -101,13 +100,13 @@ export const BannerMainContainer = styled.section`
 `;
 
 export const WatchButton = styled.button`
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 10px;
   outline: none;
   border-radius: 5px;
   text-decoration: none;

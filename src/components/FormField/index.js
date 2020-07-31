@@ -18,15 +18,15 @@ Label.Text = styled.span`
   height: 57px;
   position: absolute; 
   top: 0;
-  left: 16px;
+  left: 6px;
   
   display: flex;
   align-items: center;
   
   transform-origin: 0% 0%;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 100;
   
   transition: .1s ease-in-out;
 `;
@@ -36,7 +36,7 @@ const Input = styled.input`
   display: block;
   width: 100%;
   height: 57px;
-  font-size: 18px;
+  font-size: 14px;
   
   outline: 0;
   border: 0;
@@ -53,6 +53,7 @@ const Input = styled.input`
   &:focus {
     border-bottom-color: var(--primary);
   }
+  
   &:focus:not([type="color"]) + span {
     transform: scale(.6) translateY(-10px);
   }
