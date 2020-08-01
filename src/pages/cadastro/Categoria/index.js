@@ -1,30 +1,26 @@
 /* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
+import repositoryCategoria from '../../../repositories/categorias';
+import './categoria.css';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
+    link_extra: {
+      text: '',
+      url: '',
+    },
   };
+  const { funcaoHandle, values, clearForm } = useForm(valoresIniciais);
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-  function funcaoHandle(infoEvent) {
-    setValue(
-      infoEvent.target.getAttribute('name'),
-      infoEvent.target.value,
-    );
-  }
+  const history = useHistory();
   useEffect(() => {
     const URL_CATEGORIAS = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
@@ -40,24 +36,23 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
       <form onSubmit={function handleSubmit(infoEvent) {
         infoEvent.preventDefault();
-
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-        setValues(valoresIniciais);
+        repositoryCategoria.create(values)
+          .then(() => {
+            history.push('/');
+          });
+        clearForm();
       }}
       >
 
         <FormField
           label="Nome da Categoria"
-          name="nome"
+          name="titulo"
           type="text"
-          value={values.nome}
+          value={values.titulo}
           onChange={funcaoHandle}
         />
 
@@ -71,32 +66,72 @@ function CadastroCategoria() {
         />
 
         <FormField
-
           label="Cor"
           name="cor"
           type="color"
           value={values.cor}
           onChange={funcaoHandle}
         />
-        <Button>
+        <FormField
+          label="Texto Link extra"
+          name="linkText"
+          value={values.link_extra.text}
+          onChange={funcaoHandle}
+        />
+        <FormField
+          label="Link extra"
+          name="link"
+          value={values.link_extra.url}
+          onChange={funcaoHandle}
+        />
+        <Button className="botaoCadastrar">
           Cadastrar
         </Button>
       </form>
+      <Button className="botaoHome" as={Link} to="/">
+        Ir para home
+      </Button>
       {categorias.length === 0 && (
       <div>
         Carregando...
       </div>
       )}
-      <ul>
+      <table className="tabela">
+        <th className="id">
+          Id
+        </th>
+        <th className="titulo">
+          Titulo
+        </th>
+        <th className="cor">
+          Cor
+        </th>
+        <th className="textoLink">
+          Texto Link Extra
+        </th>
+        <th className="link">
+          Link Extra
+        </th>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
-          </li>
+          <tr>
+            <td className="id">
+              {categoria.id}
+            </td>
+            <td className="titulo">
+              {categoria.titulo}
+            </td>
+            <td className="cor">
+              {categoria.cor}
+            </td>
+            <td className="textoLink">
+              {categoria.link_extra.text}
+            </td>
+            <td className="link">
+              {categoria.link_extra.url}
+            </td>
+          </tr>
         ))}
-      </ul>
-      <Link to="/">
-        Ir para home
-      </Link>
+      </table>
     </PageDefault>
   );
 }

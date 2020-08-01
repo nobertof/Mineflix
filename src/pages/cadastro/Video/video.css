@@ -1,0 +1,19 @@
+.buttonCadastrar{
+    margin:15px;
+    float:left;
+}
+.buttonCadastrarCategoria{
+    float:right;
+    margin:15px;
+}
+.buttonCadastrarCategoria:hover,
+.buttonCadastrar:hover{
+    transform:translateY(-5px) translateX(-5px);
+    border-right:5px solid ;
+    border-bottom:5px solid gray;
+}
+.buttonCadastrarCategoria:active,
+.buttonCadastrar:active{
+    transition:.3s;
+    border:5px solid gray;
+}

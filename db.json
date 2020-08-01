@@ -1,16 +1,324 @@
 {
-    "categorias":[
-        {
-            "id":1,
-            "nome": "dlet",
-            "descricao": "Outro canal de minecraft",
-            "cor": "#cbd1ff"
-        },
-        {
-            "id":2,
-            "nome": "willzy",
-            "descricao": "Outro canal de minecraft",
-            "cor": "#ffff80"
-        }
-    ]
+  "categorias": [
+    {
+      "titulo": "viniccius13",
+      "cor": "#DB202C",
+      "link_extra": {
+        "text": "Canal do Viniccius13",
+        "url": "https://www.youtube.com/user/viniccius13"
+      },
+      "id": 1
+    },
+    {
+      "titulo": "Davi Gamer",
+      "cor": "#7a7a7a",
+      "link_extra": {
+        "text": "Canal do Davi",
+        "url": "https://www.youtube.com/user/HDDavigamer"
+      },
+      "id": 2
+    },
+    {
+      "titulo": "Forever Player",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Canal do ForeverPlayer",
+        "url": "https://www.youtube.com/user/ForeverPlayerGames"
+      },
+      "id": 3
+    },
+    {
+      "titulo": "Soldier",
+      "cor": "#994d00",
+      "link_extra": {
+        "text": "Canal do Soldier",
+        "url": "https://www.youtube.com/user/S0ldierBr"
+      },
+      "id": 4
+    },
+    {
+      "titulo": "Knadez",
+      "cor": "#0099cc",
+      "link_extra": {
+        "text": "Canal do Knadez",
+        "url": "https://www.youtube.com/user/Knadez"
+      },
+      "id": 5
+    },
+    {
+      "titulo": "Napoleon13",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Canal do Napoleon",
+        "url": "https://www.youtube.com/c/Napoleon13/videos"
+      },
+      "id": 6
+    },
+    {
+      "titulo": "willzy",
+      "descricao": "um dos melhores canais de minecraft br",
+      "cor": "#be6310",
+      "link_extra": {
+        "url": "https://www.youtube.com/user/WzGameShow",
+        "text": "canal do willzy"
+      },
+      "id": 7
+    },
+    {
+      "titulo": "dlet",
+      "descricao": "mais um canal top de minecraft",
+      "cor": "#00c1c1",
+      "link_extra": {
+        "url": "https://www.youtube.com/user/dletgamer",
+        "text": "canal do dlet"
+      },
+      "id": 8
+    },
+    {
+      "titulo": "Kronos Playing",
+      "descricao": "mais um canal top de minecraft br",
+      "cor": "#a20909",
+      "link_extra": {
+        "url": "https://www.youtube.com/user/TheKronosPlaying",
+        "text": "canal do kronos"
+      },
+      "id": 9
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "O Reino Secreto dos Pandas - Minecraft Em busca da casa automática #286",
+      "url": "https://www.youtube.com/watch?v=WtvHro8J-OU&t=3s"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "O Misterioso Quarto Branco - Minecraft Em busca da casa automática #285",
+      "url": "https://www.youtube.com/watch?v=pyRy78dFGkE"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "A Nova Armadura das Trevas - Minecraft Em busca da casa automática #284",
+      "url": "https://www.youtube.com/watch?v=eZGVjNPshNU"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Farm de PIGLIN e HOGLIN - Minecraft Em busca da casa automática #283",
+      "url": "https://www.youtube.com/watch?v=PBkYAKD9aaI&t=18s"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "O Novo Nether | O Filme | - Minecraft Em busca da casa automática #282",
+      "url": "https://www.youtube.com/watch?v=RvgM_H-A6dc"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Mega Gerador de Cobblestone - Minecraft Em busca da casa automática #281",
+      "url": "https://www.youtube.com/watch?v=tl36FelAyvE"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Finalmente a PORTA AUTOMÁTICA! - Minecraft Em busca da casa automática #280",
+      "url": "https://www.youtube.com/watch?v=gPQ51g4CE3Y"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Quebrando 250 MIL AREIAS no Nether - Minecraft Em busca da casa automática #279",
+      "url": "https://www.youtube.com/watch?v=o0RDE4IjkFc"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "titulo": "Fiz uma MEGA FARM dentro da MELANCIA - Minecraft Em busca da casa automática #278",
+      "url": "https://www.youtube.com/watch?v=BhLjIYpz0oM&t=40s"
+    },
+    {
+      "id": 10,
+      "categoriaId": 1,
+      "titulo": "Caldeirão Mágico Gigante - Minecraft Em busca da casa automática #277",
+      "url": "https://www.youtube.com/watch?v=ovZ9MlDy1d4"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "O RALO do OCEANO! - Craft Games 233",
+      "url": "https://www.youtube.com/watch?v=E9S1IkDrGQU"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "A SALA SECRETA dos VILLAGERS! - Craft Games 232",
+      "url": "https://www.youtube.com/watch?v=8Rf6xj_mBLw"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "COMEÇAMOS o NETHER HUB! - Craft Games 231",
+      "url": "https://www.youtube.com/watch?v=xUJQ39ApPe8"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "MEGA Sistema de Trocas! 1.16 - Craft Games 230",
+      "url": "https://www.youtube.com/watch?v=YX78OBAr_MA"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "Segredos e Truques para fazer na 1.16! - Craft Games 229",
+      "url": "https://www.youtube.com/watch?v=j7MskqktSi4"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "ELEVADOR AUTOMÁTICO no Minecraft! - Forever Mapa 3 #133",
+      "url": "https://www.youtube.com/watch?v=SfEtghcXbKI"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "NOVA FARM de BASALTO AUTOMATICA! - Forever Mapa 3 #132",
+      "url": "https://www.youtube.com/watch?v=i2QofqU5qRA"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "CRIEI um MINI GAME, COM A ELYTRA! - Forever Mapa 3 #131",
+      "url": "https://www.youtube.com/watch?v=odPPPTimH8c"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "FAZENDA de CARNE de PORCO (2020) !! - Forever Mapa 3 #130",
+      "url": "https://www.youtube.com/watch?v=4kj8Fcj8hSY"
+    },
+    {
+      "id": 20,
+      "categoriaId": 4,
+      "titulo": "Malditos Esqueletos! - Minecraft 1.9 - Survival Hardcore #1",
+      "url": "https://www.youtube.com/watch?v=lriQtIkGRi4&list=PLkyP3Hw_Hx-stzWDDXUSGfjKVKfHEk_L4"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "O Melhor Encantamento! - Minecraft 1.9 - Survival Hardcore #2",
+      "url": "https://www.youtube.com/watch?v=V-kJova1qk8&list=PLkyP3Hw_Hx-stzWDDXUSGfjKVKfHEk_L4&index=2"
+    },
+    {
+      "id": 22,
+      "categoriaId": 4,
+      "titulo": "A busca pela Name Tag! - Minecraft 1.9 - Survival Hardcore #3",
+      "url": "https://www.youtube.com/watch?v=KofI5Kn8rLI&list=PLkyP3Hw_Hx-stzWDDXUSGfjKVKfHEk_L4&index=3"
+    },
+    {
+      "id": 23,
+      "categoriaId": 4,
+      "titulo": "Creeper de Estimação! - Minecraft 1.9 - Survival Hardcore #4",
+      "url": "https://www.youtube.com/watch?v=-Y_9UKTTTkM&list=PLkyP3Hw_Hx-stzWDDXUSGfjKVKfHEk_L4&index=4"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "Nova serie com a RedstoneGang! ft. Brunim Neets - Redstone Gang #01",
+      "url": "https://www.youtube.com/watch?v=3bsZkAT3YDA&list=PLFIO6X2WPc-W0K3CU-Asah3TPC-AVCOWq"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "FIZEMOS UM HELICÓPTERO! ft. Napoleon - RedstoneGang #02",
+      "url": "https://www.youtube.com/watch?v=_n7_hAtYNb0&list=PLFIO6X2WPc-W0K3CU-Asah3TPC-AVCOWq&index=2"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "titulo": "NOS MUDAMOS PARA O LOCAL DA VILA! - RedstoneGang #03",
+      "url": "https://www.youtube.com/watch?v=-pzHC4eptfY&list=PLFIO6X2WPc-W0K3CU-Asah3TPC-AVCOWq&index=3"
+    },
+    {
+      "id": 27,
+      "categoriaId": 5,
+      "titulo": "VOANDO IGUAL AO CRIATIVO! ft. Kronos - RedstoneGang #04",
+      "url": "https://www.youtube.com/watch?v=9eO-yVEgOhc&list=PLFIO6X2WPc-W0K3CU-Asah3TPC-AVCOWq&index=4"
+    },
+    {
+      "id": 28,
+      "categoriaId": 5,
+      "titulo": "EXPLODIMOS A MONTANHA! - RedstoneGang #05",
+      "url": "https://www.youtube.com/watch?v=0MrNYy4yYec&list=PLFIO6X2WPc-W0K3CU-Asah3TPC-AVCOWq&index=5"
+    },
+    {
+      "id": 29,
+      "categoriaId": 6,
+      "titulo": "QUEBREI UMA MONTANHA INTEIRA NO MINECRAFT - NapoleWorld #97",
+      "url": "https://www.youtube.com/watch?v=2gkUWyxdhzg"
+    },
+    {
+      "id": 30,
+      "categoriaId": 6,
+      "titulo": "COMO FAZER UMA FARM DE TARTARUGA NO MINECRAFT! NapoleWorld #96",
+      "url": "https://www.youtube.com/watch?v=Tb_6BEILkIo"
+    },
+    {
+      "id": 31,
+      "categoriaId": 6,
+      "titulo": "CONSTRUÍ UMA TARTARUGA GIGANTE NO MINECRAFT! NapoleWorld #95",
+      "url": "https://www.youtube.com/watch?v=RV4S0X6SxC0"
+    },
+    {
+      "id": 32,
+      "categoriaId": 6,
+      "titulo": "O NOVO PORTAL DO FIM! DaviGamer e Knadez NapoleWorld #94 MINECRAFT",
+      "url": "https://www.youtube.com/watch?v=CvpV3X9GtCQ"
+    },
+    {
+      "id": 33,
+      "categoriaId": 6,
+      "titulo": "A MELHOR TROLAGEM NO MINECRAFT!!! NapoleWorld #93",
+      "url": "https://www.youtube.com/watch?v=4P7T0ORCQpE"
+    },
+    {
+      "titulo": "Enderman Pistomático - Minecraft Em busca da casa automática #276",
+      "url": "https://www.youtube.com/watch?v=8Z9SwT3D220",
+      "categoriaId": 1,
+      "id": 34
+    },
+    {
+      "titulo": "Sinal de Fumaça - Minecraft Em busca da casa automática #275",
+      "url": "https://www.youtube.com/watch?v=CJoyO_JZXmE",
+      "categoriaId": 1,
+      "id": 35
+    },
+    {
+      "titulo": "PONTE QUE se CONSTRÓI SOZINHA!! - Forever Mapa 3 #129",
+      "url": "https://www.youtube.com/watch?v=HtjGFr8H2G8",
+      "categoriaId": 3,
+      "id": 36
+    },
+    {
+      "titulo": "FIZ UMA FARM DE STRIDER e LINHA na 1.16 // Meu Mundo #309 // Minecraft",
+      "url": "https://www.youtube.com/watch?v=Ttx5iJWDhb0",
+      "categoriaId": 7,
+      "id": 37
+    },
+    {
+      "titulo": "MOB TRAP FT FOREVER PLAYER ! - SURVIVAL EVOLUTION #04",
+      "url": "https://www.youtube.com/watch?v=HQ6_w4XSQRM",
+      "categoriaId": 9,
+      "id": 38
+    },
+    {
+      "titulo": "20 HORAS MINERANDO NETHERITA - Minecraft Irmandade #50 -Dlet-",
+      "url": "https://www.youtube.com/watch?v=9jOs7tGbWHQ",
+      "categoriaId": 8,
+      "id": 39
+    }
+  ]
 }
