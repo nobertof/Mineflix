@@ -116,6 +116,7 @@ export const BannerMainContainer = styled.section`
 `;
 
 export const WatchButton = styled.button`
+  width:130px;
   font-family: 'Press Start 2P', cursive;
   box-sizing: border-box;
   cursor: pointer;
