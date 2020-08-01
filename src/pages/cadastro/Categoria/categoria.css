@@ -1,5 +1,5 @@
 @media (max-width: 800px) {
-    .id, .cor, .textoLink, .link{
+    .cor, .textoLink, .link{
         display:none;
     }
 }

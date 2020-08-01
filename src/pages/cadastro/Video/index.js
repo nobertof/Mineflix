@@ -10,7 +10,25 @@ import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categorias';
 import './video.css';
 
+function validate(values, categoria) {
+  const errors = {};
+  if (values.titulo.length === 0) {
+    errors.titulo = '*Por favor, insira um titulo valido';
+  }
+  if (values.url.length === 0) {
+    errors.url = '*Por favor, insira uma url valida';
+  } else if (!values.url.includes('https://www.youtube.com/watch')) {
+    errors.url = '*O sistema aceita apenas links de videos do youtube';
+  }
+  if (values.categoria.length === 0) {
+    errors.categoria = '*Por favor, insira uma categoria valida';
+  } else if (categoria === undefined) {
+    errors.categoria = '*A categoria digitada nao esta cadastrada no sistema';
+  }
+  return errors;
+}
 function CadastroVideo() {
+  const [errors, setErrors] = useState({});
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
@@ -32,28 +50,34 @@ function CadastroVideo() {
       <form onSubmit={(event) => {
         event.preventDefault();
         const change = categorias.find((categoria) => (categoria.titulo === values.categoria));
-        videosRepository.create({
-          titulo: values.titulo,
-          url: values.url,
-          categoriaId: change.id,
-        })
-          .then(() => {
-            history.push('/');
-          });
+        setErrors(validate(values, change));
+        if (errors.length === 0) {
+          videosRepository.create({
+            titulo: values.titulo,
+            url: values.url,
+            categoriaId: change.id,
+          })
+            .then(() => {
+              history.push('/');
+            });
+        }
       }}
       >
+        {errors.titulo && <span className="formField_error">{errors.titulo}</span>}
         <FormField
           label="Nome do Video"
           name="titulo"
           value={values.titulo}
           onChange={funcaoHandle}
         />
+        {errors.url && <span className="formField_error">{errors.url}</span>}
         <FormField
           label="URL"
           name="url"
           value={values.url}
           onChange={funcaoHandle}
         />
+        {errors.categoria && <span className="formField_error">{errors.categoria}</span>}
         <FormField
           label="Categoria"
           name="categoria"

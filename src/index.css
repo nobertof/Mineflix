@@ -4,7 +4,11 @@
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
 }
-
+.formField_error{
+  padding:1%;
+  font-size:10px;
+  color:var(--primary);
+}
 :root {
   --primary: #DB202C;
   --black: #000000;
